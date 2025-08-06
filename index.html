@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shivani Agrawal</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
@@ -55,20 +56,24 @@
       list-style: none;
       padding-left: 0;
     }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
     a {
       color: #007acc;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
       word-break: break-word;
     }
     a:hover {
       text-decoration: underline;
     }
-    main p,
-    li {
-      font-size: 1rem;
+    i {
+      font-size: 1.1rem;
     }
 
-    /* Improved mobile responsiveness */
     @media (max-width: 600px) {
       body {
         padding: 1rem;
@@ -144,9 +149,11 @@
     <section>
       <h2>Contact</h2>
       <ul>
-        <li><a href="https://www.linkedin.com/in/shivani-agrawal" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li><a href="https://www.linkedin.com/in/shivani-agrawal" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        <li><a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i>Google Scholar</a></li>
+        <li><a href="https://x.com/YOUR_HANDLE" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i>X (Twitter)</a></li>
+        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>GitHub</a></li>
+        <li><a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i>Email</a></li>
       </ul>
     </section>
   </main>
