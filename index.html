@@ -1,166 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shivani Agrawal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivani Agrawal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #222;
+      padding: 1.5rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    img.profile {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.3rem;
+    }
+    .title {
+      font-size: 1rem;
+      color: #555;
+    }
+    section {
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.2rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+      word-break: break-word;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    main p,
+    li {
+      font-size: 1rem;
+    }
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      background-color: #ffffff;
-      color: #222;
-      padding: 2rem;
-      max-width: 700px;
-      margin: auto;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-    img.profile {
-      width: 96px;
-      height: 96px;
-      border-radius: 50%;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.2rem;
-    }
-    .title {
-      font-size: 1rem;
-      color: #555;
-    }
-    section {
-      margin-bottom: 1.5rem;
-    }
-    h2 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 0.2rem;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Added: CSS for the social media icons */
-    .social-links {
-      margin-top: 10px;
-      display: flex;
-      gap: 1.2rem;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .social-links a {
-      font-size: 1.5rem; /* Adjust icon size */
-      color: #222;
-      transition: color 0.3s ease-in-out;
-    }
-    .social-links a:hover {
-      color: #007acc; /* Use your existing link color */
-      text-decoration: none; /* Remove underline on hover for icons */
-    }
-    .email-link {
-      margin-left: auto;
-      font-size: 1rem;
-      color: #555;
-    }
-
-    @media (max-width: 500px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .social-links {
-        justify-content: center;
-      }
-      .email-link {
-        margin-left: 0;
-        margin-top: 10px;
-      }
-    }
-  </style>
+    /* Improved mobile responsiveness */
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.8rem;
+      }
+      img.profile {
+        width: 72px;
+        height: 72px;
+      }
+      h1 {
+        font-size: 1.4rem;
+      }
+      .title {
+        font-size: 0.95rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+      main p,
+      li {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <img src="assets/profile.jpg" alt="Profile photo of Shivani Agrawal" class="profile" />
-    <div>
-      <h1>Shivani Agrawal</h1>
-      <p class="title"> Staff Software Engineer at Google· Lead Algorithmic Efficiency Optimizations</p>
-    </div>
-  </header>
+  <header>
+    <img src="assets/profile.jpg" alt="Profile photo of Shivani Agrawal" class="profile" />
+    <div>
+      <h1>Shivani Agrawal</h1>
+      <p class="title">Software Engineer at Google · Algorithm Optimization Enthusiast</p>
+    </div>
+  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a Staff Software Engineer at <strong>Google</strong>, specializing in scalable algorithm design and performance engineering. I love building efficient systems and crafting elegant solutions to complex problems.
-    </p>
-  </section>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a software engineer at <strong>Google</strong>, specializing in scalable algorithm design and performance engineering.
+        I love building efficient systems and crafting elegant solutions to complex problems.
+      </p>
+    </section>
 
-  <section>
-    <h2>Experience</h2>
-    <p><strong>Google</strong> — Software Engineer</p>
-    <p>Focus on algorithm efficiency, backend performance, and scalable infrastructure.</p>
-  </section>
+    <section>
+      <h2>Experience</h2>
+      <p><strong>Google</strong> — Software Engineer</p>
+      <p>Focus on algorithm efficiency, backend performance, and scalable infrastructure.</p>
+    </section>
 
-  <section>
-    <h2>Education</h2>
-    <p><strong>University of California</strong><br />
-    (Specify campus, major, and year)</p>
-  </section>
+    <section>
+      <h2>Education</h2>
+      <p>
+        <strong>University of California</strong><br />
+        <em>(Specify campus, major, and graduation year)</em>
+      </p>
+    </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Algorithm Optimization</li>
-      <li>Software Architecture</li>
-      <li>Performance Tuning</li>
-      <li>Data Structures</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Algorithm Optimization</li>
+        <li>Software Architecture</li>
+        <li>Performance Tuning</li>
+        <li>Data Structures</li>
+      </ul>
+    </section>
 
-    <section>
-    <h2>Connect with me</h2>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/shivani-agrawal" target="_blank" title="LinkedIn Profile">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://scholar.google.com/citations?user=your-id" target="_blank" title="Google Scholar Profile">
-        <i class="fas fa-graduation-cap"></i>
-      </a>
-      <a href="https://x.com/your-username" target="_blank" title="X Profile">
-        <i class="fab fa-x-twitter"></i>
-      </a>
-      <a href="https://github.com/yourusername" target="_blank" title="GitHub Profile">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="mailto:your.email@example.com" class="email-link" title="Send me an email">
-        your.email@example.com
-      </a>
-    </div>
-  </section>
+    <section>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/shivani-agrawal" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
